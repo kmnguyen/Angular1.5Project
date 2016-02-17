@@ -1,0 +1,15 @@
+<navbar></navbar>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h4> Forecast by City</h4>
+        <div class="form-group">
+            <input type="text" ng-model="homeController.city" class="form-control" />
+        </div>
+        <a ui-sref="forecast" class="btn btn-primary"> Get Forecast </a>
+    </div>
+</div>
+
+<h1> {{homeController.imageString}} </h1>
+
+<image-grid image-source='homeController.imageObject' image-string='homeController.imageString'></image-grid>
